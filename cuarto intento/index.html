@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina principla</title>
+    <link rel="shortcut icon " href="img/logoone.jpg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!-----Ventana modal-->
+    <div id="modal" class=" borde modal">
+        <div class=" borde modal-contenedor">
+            <div class=" borde modal-header">Inicio de secion</div>
+            <a href="#" class=" borde modal-cerrar">X</a>
+            <div class=" borde modal-contenido">
+                <a href="app/index-admin.html">Administrador</a>
+                <a href="app/index-empleado.html">Empleado</a>
+                <a href="app/index-paciente.html">Paciente</a>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor">
+
+        <!----navegador--->
+        <nav>
+            <div class="logo">
+                <img src="img/opticolombia.jpg" alt="logo">
+            </div>
+            <div class="busqueda">OPTICOLOMBIA</div>
+            <div class="inicio">
+                <ul>
+                    <li>
+                        <a href="#modal" id="">INICIO</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="registrarse">
+                <ul>
+                    <li><a href="">REGISTRARSE</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!---segundo contenedor-->
+
+        <header class="Contendor-principal">
+            <div class="contenedor-opaco">
+                <div class="barra">
+
+                    <div class="Citas-medicas">
+                        <h1>Citas Medicas</h1>
+                    </div>
+                    <div class="Historia-clinica">
+                        <h1>Historia Clinica</h1>
+                    </div>
+                    <div class="nosotros">
+                        <h1>Nosotros</h1>
+                    </div>
+                    <div class="contactenos">
+                        <h1>Contactenos</h1>
+                    </div>
+                </div>
+
+                <div class="publicidad-izq">
+                    <div class="Logo-interno"></div>
+                </div>
+                <div class="Publicidad-der">
+                    <img src="img/opticolombia.jpg" alt="logo" title="logo">
+                </div>
+
+                <div class="cajainferiorder">
+                    <div class="servicios">
+                        <h1>Servicios de Nuestra Optica</h1>
+                    </div>
+                    <div class="lentescontacto">
+                        <h1>Lentes de Contacto</h1>
+                    </div>
+                    <div class="lentesoftalmologicos">
+                        <h1>Lentes Oftalmologicos</h1>
+                    </div>
+                    <div class="accesorios">
+                        <h1>Accesorios</h1>
+                    </div>
+                    <div class="monturas">
+                        <h1>Monturas</h1>
+                    </div>
+                    <div class="asesoria">
+                        <h1>Asesoria Especializada</h1>
+                    </div>
+                </div>
+                <section>
+                    <div class="cuadro1">
+                        <form action="" method="">
+                            <div class="encabezado">
+                                <h1>Pide tu cita ya!!</h1>
+                            </div>
+                            <div class="cuerpo-del-formulario">
+                                <div>
+                                    <label class="alinear-arriba" for="Nombres-y-apellidos"></label>
+                                    <input name="Nombres-y-apellidos" id="Nombres-y-apellidos" type="text" placeholder="Nombres-y-apellidos">
+                                    <label class="alinear-arriba" for="correo"></label>
+                                    <input name="correo" id="correo" type="email" placeholder="correo">
+                                    <label class="alinear-arriba" for="telefono"></label>
+                                    <input name="telefono" id="telefono" placeholder="telefono" type="number">
+                                    <label for="cars"></label>
+                                    <select class="a" name="cars" id="cars">
+                                        <option value="nombrecualquiera">tipo de consulta</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                            <div class="pie-de-formulario">
+                                <input type="submit" value="Enviar" onclick="datos_enviados()">
+                                <input type="reset" value="Borrar">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="cuadro2">
+                        <div class="primer-social">
+                            <i class="fab fa-facebook-square"></i>
+                        </div>
+                        <div class="segundo-social">
+                            <i class="fab fa-twitter-square"></i>
+                        </div>
+                        <div class="tercer-social">
+                            <i class="fab fa-instagram-square"></i>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!---pie de paginas-->
+                <footer class="pie-de-pagina">
+                    <div class="jenen">
+                        <h1>Copyright © JenenSystem</h1>
+                    </div>
+                </footer>
+            </div>
+            <script src="javaScript/scrpis.js"></script>
+
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

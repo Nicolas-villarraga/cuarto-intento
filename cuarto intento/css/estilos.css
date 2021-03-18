@@ -1,0 +1,537 @@
+/*fuente*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+
+/*eslitos generales*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inria Serif', serif;
+}
+
+
+/*Clases especiales */
+
+.contenedor {
+    width: 95%;
+    height: 100vh;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.borde {
+    border: 1px solid black;
+}
+
+.titulo {
+    widows: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.alinear-arriba {
+    vertical-align: top;
+}
+
+
+/*ventana modal*/
+
+.modal {
+    width: 100vw;
+    margin: auto;
+    height: 100vh;
+    padding-top: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-contenedor {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 1);
+    transition: all 500ms ease;
+    position: relative;
+    transform: translateY(-30%);
+}
+
+.modal:target .modela-contenedor {
+    transform: translateY(0%);
+}
+
+.modal-contenedor .modal-header {
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.modal-contenedor .modal-cerrar {
+    position: absolute;
+    text-decoration: none;
+    color: #222;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+}
+
+.modal-contenido {
+    padding-top: 100px;
+}
+
+.modal-contenido a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 50%;
+    font-size: 1.5em;
+}
+
+
+/*navegador*/
+
+.nav {
+    width: 95%;
+    max-width: 1280px;
+    height: 10px;
+}
+
+.logo {
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.busqueda {
+    width: 68.5%;
+    height: 100%;
+    float: left;
+    color: black;
+    text-align: justify;
+    padding: 1.1%;
+    background: #FFFFFF;
+}
+
+.inicio {
+    width: 10.5%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background: #7E7E7E;
+}
+
+
+/*nivel 0*/
+
+.inicio ul {
+    list-style: none;
+}
+
+.inicio ul li {
+    display: inline-block;
+    width: 130px;
+}
+
+.inicio ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 11px 5px;
+    border-bottom: 2px solid #7E7E7E;
+}
+
+.inicio ul li a:hover {
+    border-bottom: 2px solid yellow;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/*nivel 1*/
+
+
+/*nivel 2*/
+
+.registrarse {
+    width: 11%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background: #7E7E7E;
+}
+
+
+/*NIVEL 0*/
+
+.registrarse ul {
+    list-style: none;
+}
+
+.registrarse ul li {
+    display: inline-block;
+    width: 135px;
+}
+
+.registrarse ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+    color: #FFFFFF;
+    padding: 11px 5px;
+    border-bottom: 2px solid #7E7E7E;
+}
+
+.registrarse ul li a:hover {
+    border-bottom: 2px solid yellow;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/*NIVEL 1*/
+
+
+/*NIVEL 2*/
+
+
+/*Segundo contenedor*/
+
+.Contendor-principal {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondojenensystem.jpg);
+    background-size: 100% 100%;
+}
+
+.contenedor-opaco {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 4%;
+}
+
+
+/*barra de inicio horizontal*/
+
+.barra {
+    width: 65%;
+    height: 7%;
+    margin-left: 5%;
+    margin-top: 0.2%;
+    float: left;
+}
+
+.Citas-medicas {
+    width: 20%;
+    height: 100%;
+    float: left;
+    color: #FFFFFF;
+    padding: 1.3%;
+}
+
+.Citas-medicas h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.Historia-clinica {
+    width: 20%;
+    height: 100%;
+    float: left;
+    color: #FFFFFF;
+    padding: 1.3%;
+}
+
+.Historia-clinica h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.nosotros {
+    width: 20%;
+    height: 100%;
+    float: left;
+    color: #FFFFFF;
+    padding: 1.3%;
+}
+
+.nosotros h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.contactenos {
+    width: 20%;
+    height: 100%;
+    float: left;
+    color: #FFFFFF;
+    padding: 1.3%;
+}
+
+.contactenos h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+/*Seccion publicitaria*/
+
+.Publicidad-der {
+    width: 20%;
+    height: 47%;
+    background-image: url(../img/cuadro\ iqz.jpg);
+    background-size: 100% 100%;
+    margin-top: 2%;
+    margin-left: 77%;
+}
+
+.Publicidad-der img {
+    width: 14%;
+    height: 8%;
+    margin-top: 101.5%;
+}
+
+.publicidad-izq {
+    width: 48%;
+    height: 53%;
+    background-image: url(../img/promo.jpg);
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 6%;
+}
+
+.Logo-interno {
+    width: 7%;
+    height: 6%;
+    background-image: url(../img/opticolombia.jpg);
+    background-size: 100% 100%;
+    margin-top: 48.8%;
+}
+
+.cajainferiorder {
+    width: 20%;
+    height: 40%;
+    margin-left: 77%;
+    margin-top: 0.5%;
+}
+
+.servicios {
+    width: 100%;
+    height: 16.6%;
+    padding: 10px;
+    color: #0099CC;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.servicios h1 {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.lentescontacto {
+    width: 100%;
+    height: 10%;
+    text-align: justify;
+    margin-left: 7%;
+    color: #FFFFFF;
+}
+
+.lentescontacto h1 {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.lentesoftalmologicos {
+    width: 100%;
+    height: 10%;
+    text-align: justify;
+    margin-left: 7%;
+    color: #FFFFFF;
+}
+
+.lentesoftalmologicos h1 {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.accesorios {
+    width: 100%;
+    height: 10%;
+    text-align: justify;
+    margin-left: 7%;
+    color: #FFFFFF;
+}
+
+.accesorios h1 {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.monturas {
+    width: 100%;
+    height: 10%;
+    text-align: justify;
+    margin-left: 7%;
+    color: #FFFFFF;
+}
+
+.monturas h1 {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.asesoria {
+    width: 100%;
+    height: 10%;
+    text-align: justify;
+    margin-left: 7%;
+    color: #FFFFFF;
+}
+
+.asesoria h1 {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+
+/*section*/
+
+section {
+    width: 100%;
+    height: 30.5%;
+    float: left;
+    margin-top: -13.5%;
+}
+
+.cuadro1 {
+    width: 55%;
+    height: 100%;
+    float: left;
+    margin-left: 3%;
+}
+
+form {
+    padding-left: 5%;
+}
+
+form .encabezado {
+    font-size: 1.1em;
+    color: #FFFFFF;
+    padding-bottom: 1%;
+    border-bottom: 1px solid white;
+}
+
+form .cuerpo-del-formulario {
+    padding-top: 2%;
+    text-align: justify;
+}
+
+form .cuerpo-del-formulario label {
+    width: 30%;
+    height: 25px;
+}
+
+form .cuerpo-del-formulario input {
+    width: 30%;
+    height: 25px;
+    padding: 1%;
+}
+
+select {
+    width: 30%;
+    height: 25px;
+    margin-top: 2%;
+}
+
+form .cuerpo-del-formulario #tipo-de-consulta {
+    margin-top: 2%;
+}
+
+form .pie-de-formulario {
+    padding-top: 2%;
+}
+
+form .pie-de-formulario input {
+    font-size: 1em;
+    padding: 5px;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+.cuadro2 {
+    width: 20%;
+    height: 15%;
+    float: left;
+    margin-left: 22%;
+    margin-top: 12.5%;
+}
+
+.primer-social {
+    width: 10%;
+    height: 100%;
+    float: left;
+    margin-left: 67%;
+    font-size: 1.4em;
+    color: #FFFFFF;
+}
+
+.segundo-social {
+    width: 10%;
+    height: 100%;
+    float: left;
+    font-size: 1.4em;
+    color: #FFFFFF;
+}
+
+.tercer-social {
+    width: 10%;
+    height: 100%;
+    float: left;
+    font-size: 1.4em;
+    color: #FFFFFF;
+}
+
+
+/*pie de pagina */
+
+.pie-de-pagina {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1.1%;
+    background-color: #FFFFFF;
+}
+
+.jenen {
+    width: 13%;
+    height: 100%;
+    float: right;
+    padding-left: 1%;
+    padding-top: 0.7%;
+    margin-right: 1%;
+}
+
+.jenen h1 {
+    font-size: 0.7em;
+    text-align: left;
+}
