@@ -3,60 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login y registro</title>
-    <link rel="stylesheet" href="../app/loginregister/css/estilos-login.css">
+    <title>Login y registro</title>
+    <link rel="stylesheet" href="../app/css/estilos-login.css">
 </head>
 
 <body>
 
     <main>
-        <div class="contenedor__login">
-            <div class="caja-trasera">
-                <div class="caja-trasera-login">
-                    <h3> ¿Ya tienes una cuenta? </h3>
-                    <p>Iniciar sesión para entrar a la pagina</p>
-                    <button id="btn__iniciar sesión">Iniciar Sesión</button>
-                </div>
-                <div class="caja-trasera-registro">
-                    <h3> ¿aun no tienes una cuenta? </h3>
-                    <p>Registrate para que puedas inicar Sesión</p>
-                    <button id="btn__iniciar sesión">Registrarse</button>
+        <div class="contenedor__todo">
+            <div class="caja_trasera">
+                <div class="caja_trasera_login">
+                    <h3>¿ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar a la pagina</p>
+                    <button id="btn__iniciar_sesión">Iniciar sesion</button>
                 </div>
 
-                <!---Formulario de login y registro-->
-                <div class="contenedor-login-registro">
-                    <!--login-->
-
-                    <form action="" class="formulario--login">
-                        <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
-                        <button>Entrar</button>
-                    </form>
-                    <!--registro-->
-                    <form action="" class="formulario--registro">
-                        <h2>Registrarse</h2>
-                        <input type="text" placeholder="Nombre completo">
-                        <input type="text" placeholder="Correo electronico">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
-                        <button>Registrarse</button>
-
-
-
-
-                    </form>
-
-
-
-
-
+                <div class="caja_trasera_registro">
+                    <h3>¿aun no tienes una cuenta?</h3>
+                    <p>Registrate para iniciar sesión</p>
+                    <button id="btn__Registrarse">Registrarse</button>
                 </div>
             </div>
 
-
+            <!---formulario de login y registro-->
+            <div class="contenedor__login_registro">
+                <!--login-->
+                <form action="" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Entrar</button>
+                </form>
+                <!--registro-->
+                <form action="" class="formulario__registro">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Registrarse</button>
+                </form>
+            </div>
 
 
 
@@ -66,11 +54,13 @@
 
 
 
+
+
+
+
     </main>
 
-
-
-
+    <script src="../app/javaScript/scrip.js"></script>
 </body>
 
 </html>
